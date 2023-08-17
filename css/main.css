@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #0a1128;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.head {
+	width: 100%;
+	height: 60px;
+	background-color: #1282a2;
+	text-align: center;
+}
+.headBtn {
+	background-color: #1282a2;
+	width: 100vw;
+	height: 60px;
+	border: none;
+}
+.headBtn:hover {
+	background-color: #58e19c;
+}
+
+.head a {
+	padding: 20px;
+	text-decoration: none;
+	color: antiquewhite;
+}
+.aboutus {
+	position: relative;
+	background-image: url("../img/motor-2828878_640.jpg");
+	height: 330px;
+	background-position: center;
+	background-size: cover;
+}
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+.hero-text h2 {
+	margin-bottom: 10px;
+	font-size: 2.4rem;
+}
+.hero-text h3 {
+	font-size: 1.8rem;
+}
