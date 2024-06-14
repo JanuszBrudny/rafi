@@ -11,16 +11,20 @@ html {
 }
 body {
 	background-color: #0a1128;
+	font-family: "Montserrat", sans-serif;
 }
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
+	max-width: 1200px;
 }
 .header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	height: 100%;
 }
 .head {
 	width: 100%;
@@ -30,7 +34,7 @@ body {
 }
 .headBtn {
 	background-color: #1282a2;
-	width: 100vw;
+	width: 100%;
 	height: 60px;
 	border: none;
 }
@@ -84,11 +88,21 @@ body {
 	font-size: 1.8rem;
 }
 .aside {
+	background: #000;
 	margin-top: 1em;
 	width: 100%;
-	height: 100px;
+	height: 100%;
 	border: 1px solid white;
 	border-radius: 8px;
+}
+.aside_mark {
+	font-weight: bold;
+}
+.logo-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	cursor: pointer;
 }
 .offers {
 	width: 100%;
@@ -104,8 +118,8 @@ body {
 .offers-option {
 	margin: 2rem auto;
 	padding: 10px;
-	width: 300px;
-	height: 400px;
+	width: 200px;
+	height: 460px;
 	background-color: #1282a2;
 	background-size: cover;
 	background-position: center;
@@ -115,7 +129,7 @@ body {
 }
 .offers-img {
 	width: 100%;
-	height: 200px;
+	height: 150px;
 }
 .offers-heading {
 	margin-bottom: 10px;
@@ -125,6 +139,7 @@ body {
 .offers-text {
 	padding: 10px 20px;
 	font-size: 1.4rem;
+	text-align: center;
 }
 .footer {
 	width: 100%;
@@ -139,15 +154,30 @@ body {
 	padding: 1rem;
 	text-align: center;
 }
-
+.footer-info a {
+	display: block;
+	padding: 2rem;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fefcfb;
+}
+.map {
+	padding: 1em;
+}
+.social-icon {
+	width: 20px;
+	height: 20px;
+}
 .footer__bottom-text {
 	font-size: 2rem;
 	background-color: #034078;
 	color: #fefcfb;
 	text-align: center;
 }
-
-@media (min-width: 767px) {
+/* <a href="https://pl.freepik.com/ikona/facebook_2504903#fromView=search&page=1&position=2&uuid=6d7bf156-6e6d-4aaf-9a21-d894383bc670">Ikona autorstwa Ruslan Babkin</a> */
+/* <a href="https://pl.freepik.com/ikona/instagram_2111463#fromView=search&page=1&position=0&uuid=9a7a6ecb-0480-4913-b0cc-3b6a8d39d11d">Ikona autorstwa Pixel perfect</a> */
+/* <a href="https://pl.freepik.com/ikona/youtube_3938026#fromView=search&page=1&position=12&uuid=9ee95825-4ecf-4d23-842e-ac9c9527d714">Ikona autorstwa Rakib Hassan Rahim</a> */
+@media (min-width: 576px) {
 	.offers,
 	.footer {
 		display: flex;
