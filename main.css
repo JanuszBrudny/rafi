@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #0a1128;
+	font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.head {
+	width: 100%;
+	height: 60px;
+	background-color: #1282a2;
+	text-align: center;
+}
+.headBtn {
+	background-color: #1282a2;
+	width: 100%;
+	height: 60px;
+	border: none;
+}
+.headBtn:hover {
+	background-color: #58e19c;
+}
+
+.head a {
+	padding: 20px;
+	text-decoration: none;
+	color: antiquewhite;
+}
+.aboutus {
+	position: relative;
+	background-image: url("../img/tuareg.jpg");
+	height: 330px;
+	background-position: center;
+	background-size: cover;
+}
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+.hero-text h2 {
+	margin-bottom: 10px;
+	font-size: 2.4rem;
+}
+.hero-text h3 {
+	font-size: 1.8rem;
+}
+.about-company {
+	margin: 1em auto;
+	padding: 1em;
+	width: 100%;
+	height: 100%;
+	background-color: #1282a2;
+	border-radius: 8px;
+	text-align: center;
+	color: #fefcfb;
+	font-size: 1.8rem;
+}
+.aside {
+	background: #000;
+	margin-top: 1em;
+	width: 100%;
+	height: 100%;
+	border: 1px solid white;
+	border-radius: 8px;
+}
+.aside_mark {
+	font-weight: bold;
+}
+.logo-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.offers {
+	width: 100%;
+	height: 100%;
+	color: #fefcfb;
+}
+.offers-title {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 20px;
+	color: #fefcfb;
+}
+.offers-option {
+	margin: 2rem auto;
+	padding: 10px;
+	width: 200px;
+	height: 500px;
+	background-color: #1282a2;
+	background-size: cover;
+	background-position: center;
+	border-radius: 8px;
+}
+.offers-img {
+	width: 100%;
+	height: 150px;
+}
+.offers-heading {
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 2rem;
+}
+.offers-text {
+	padding: 10px 20px;
+	font-size: 1.4rem;
+	text-align: center;
+}
+.footer {
+	width: 100%;
+	background-color: #034078;
+	color: #fefcfb;
+	font-size: 1.4rem;
+}
+.footer-info {
+	width: 300px;
+	height: 100%;
+	margin: auto;
+	padding: 1rem;
+	text-align: center;
+}
+.footer-info a {
+	display: block;
+	padding: 2rem;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fefcfb;
+}
+.map {
+	padding: 1em;
+}
+.social-icon {
+	width: 20px;
+	height: 20px;
+}
+.footer__bottom-text {
+	font-size: 2rem;
+	background-color: #034078;
+	color: #fefcfb;
+	text-align: center;
+}
+/* <a href="https://pl.freepik.com/ikona/facebook_2504903#fromView=search&page=1&position=2&uuid=6d7bf156-6e6d-4aaf-9a21-d894383bc670">Ikona autorstwa Ruslan Babkin</a> */
+/* <a href="https://pl.freepik.com/ikona/instagram_2111463#fromView=search&page=1&position=0&uuid=9a7a6ecb-0480-4913-b0cc-3b6a8d39d11d">Ikona autorstwa Pixel perfect</a> */
+/* <a href="https://pl.freepik.com/ikona/youtube_3938026#fromView=search&page=1&position=12&uuid=9ee95825-4ecf-4d23-842e-ac9c9527d714">Ikona autorstwa Rakib Hassan Rahim</a> */
+@media (min-width: 576px) {
+	.offers,
+	.footer {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+
+		flex-wrap: wrap;
+		overflow: hidden;
+	}
+	.offers-text {
+		padding: 10px 20px;
+		font-size: 1.4rem;
+	}
+	.offers-title {
+		font-size: 2.4rem;
+	}
+}
